@@ -131,7 +131,7 @@ FOREIGN KEY (IdPengguna)
 REFERENCES pengguna(IdPengguna);
 
 
-INSERT INTO HakAkses (IdAkses, NamaAkses, Keterangann) 
+INSERT INTO HakAkses (IdAkses, NamaAkses, Keterangan) 
 VALUES 
 (1, 'Administrator', 'Superuser dengan hak akses penuh'),
 (2, 'Manager', 'Mengelola data dan transaksi');
