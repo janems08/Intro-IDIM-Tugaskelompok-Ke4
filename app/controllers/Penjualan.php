@@ -4,7 +4,7 @@ class Penjualan extends Controller {
 	
 	public function index()
 	{
-		$data['title'] = 'Data Penjualan Barang';
+		$data['title'] = 'Data Penjualan';
 		$data['penjualan'] = $this->model('PenjualanModel')->getAllPenjualan();
 		$this->view('templates/header', $data);
 		$this->view('templates/sidebar', $data);
@@ -37,9 +37,9 @@ class Penjualan extends Controller {
 
 	public function edit($id){
 
-		$data['title'] = 'Detail penjualan';
+		$data['title'] = 'Detail Penjualan';
 		$data['pengguna'] = $this->model('PenggunaModel')->getAllPengguna();
-		$data['barang'] = $this->model('BarangModel')->getAllBarang();
+        $data['barang'] = $this->model('BarangModel')->getAllBarang();
 		$data['penjualan'] = $this->model('PenjualanModel')->getPenjualanById($id);
 		$this->view('templates/header', $data);
 		$this->view('templates/sidebar', $data);
@@ -67,7 +67,7 @@ class Penjualan extends Controller {
 			exit;			
 		}else{
 			Flasher::setMessage('Gagal','dihapus','danger');
-			header('location: '. base_url . '/penjualan');
+			header('location: '. base_url . '/penjualan    ');
 			exit;	
 		}
 	}

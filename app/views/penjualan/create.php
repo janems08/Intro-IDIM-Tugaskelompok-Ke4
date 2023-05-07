@@ -23,11 +23,11 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label >Jumlah Penjualan</label>
-                    <input type="number" min="1" class="form-control" placeholder="masukkan jumlah penjualan" name="JumlahPenjualan">
+                    <input type="number" min = "1" class="form-control" placeholder="masukkan jumlah barang yang hendak di jual..." name="JumlahPenjualan">
                   </div>
                   <div class="form-group">
                     <label >Harga Jual</label>
-                    <input type="number" step="10000" min="0" max="1000000000" class="form-control" placeholder="masukkan harga jual" name="HargaJual">
+                    <input type="number" class="form-control" step="10000" min="0" max="100000000" placeholder="masukkan harga jual..." name="HargaJual">
                   </div>
                   <div class="form-group">
                     <label>Pengguna</label>
@@ -40,7 +40,7 @@
                   </div>
                   <div class="form-group">
                     <label >Tanggal Penjualan</label>
-                    <input type="text" class="form-control" placeholder="masukkan tanggal penjualan" name="TanggalPenjualan">
+                    <input type="text" class="form-control" max="<?php echo date('Y-m-d'); ?>" value="<?php echo date('Y-m-d'); ?>" pattern="\d{4}-\d{2}-\d{2}" placeholder="masukkan tanggal penjualan..." name="TanggalPenjualan">
                   </div>
                   <div class="form-group">
                     <label>Nama Barang</label>

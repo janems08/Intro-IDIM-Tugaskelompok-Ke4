@@ -193,7 +193,7 @@ VALUES
   (22, 1, 1, 16500000, 6, '2023-04-20'),
   (23, 3, 2, 8500000, 6, '2023-04-20');
 
-  INSERT INTO pembelian (IdPembelian, IdBarang, JumlahPembelian, HargaBeli, IdPengguna, TanggalPembelian)
+INSERT INTO pembelian (IdPembelian, IdBarang, JumlahPembelian, HargaBeli, IdPengguna, TanggalPembelian)
 VALUES
 (5, 1, 5, 15000000, 3, '2023-04-16'),
 (6, 2, 3, 11000000, 3, '2023-04-16'),

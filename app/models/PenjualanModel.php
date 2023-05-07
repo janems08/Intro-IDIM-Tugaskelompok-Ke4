@@ -31,13 +31,13 @@ class PenjualanModel {
 		$this->db->bind('HargaJual', $data['HargaJual']);
         $this->db->bind('IdPengguna', $data['IdPengguna']);
 		$this->db->bind('TanggalPenjualan', $data['TanggalPenjualan']);
-		$this->db->bind('IdBarang', $data['IdBarang']);
+        $this->db->bind('IdBarang', $data['IdBarang']);
 		$this->db->execute();
 
 		return $this->db->rowCount();
 	}
 
-	public function updateDataPenjualan($data)
+	public function updateDatapenjualan($data)
 	{
 		$query = "UPDATE penjualan SET JumlahPenjualan=:JumlahPenjualan, HargaJual=:HargaJual, IdPengguna=:IdPengguna, TanggalPenjualan=:TanggalPenjualan, IdBarang=:IdBarang WHERE IdPenjualan=:IdPenjualan";
 		$this->db->query($query);
@@ -46,7 +46,7 @@ class PenjualanModel {
         $this->db->bind('HargaJual',$data['HargaJual']);
         $this->db->bind('IdPengguna',$data['IdPengguna']);
         $this->db->bind('TanggalPenjualan',$data['TanggalPenjualan']);
-		$this->db->bind('IdBarang',$data['IdBarang']);
+        $this->db->bind('IdBarang',$data['IdBarang']);
 
 		$this->db->execute();
 

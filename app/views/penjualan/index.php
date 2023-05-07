@@ -24,16 +24,16 @@
 
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title"><?= $data['title'] ?></h3> <a href="<?= base_url; ?>/penjualan/tambah" class="btn float-right btn-xs btn btn-primary">Tambah penjualan</a>
+          <h3 class="card-title"><?= $data['title'] ?></h3> <div class="btn-group float-right"><a href="<?= base_url; ?>/penjualan/tambah" class="btn float-right btn-xs btn btn-primary">Tambah Penjualan</a>
+        </div>
         </div>
         <div class="card-body">
-        
-     
+
           <table class="table table-bordered">
                   <thead>                  
                     <tr>
                       <th style="width: 10px">#</th>
-                      <th>Jumlah penjualan</th>
+                      <th>Jumlah Penjualan</th>
                       <th>Harga Jual</th>
                       <th>Nama Pengguna</th>
                       <th>Tanggal Penjualan</th>
@@ -52,7 +52,7 @@
                       <td><?= $row['TanggalPenjualan'];?></td>
                       <td><?= $row['NamaBarang'];?></div></td>
                       <td>
-                        <a href="<?= base_url; ?>/penjualan/edit/<?= $row['IdPenjualan'] ?>" class="badge badge-info ">Edit</a> 
+                        <a href="<?= base_url; ?>/penjualan/edit/<?= $row['IdPenjualan'] ?>" class="badge badge-info">Edit</a> 
                         <a href="<?= base_url; ?>/penjualan/hapus/<?= $row['IdPenjualan'] ?>" class="badge badge-danger" onclick="return confirm('Hapus data?');">Hapus</a>
                       </td>
                     </tr>
