@@ -35,7 +35,9 @@
                       <th style="width: 10px">#</th>
                       <th>Jumlah penjualan</th>
                       <th>Harga Jual</th>
+                      <th>Nama Pengguna</th>
                       <th>Tanggal Penjualan</th>
+                      <th>Nama Barang</th>
                       <th style="width: 150px">Action</th>
                     </tr>
                   </thead>
@@ -46,7 +48,9 @@
                       <td><?= $no; ?></td>
                       <td><?= $row['JumlahPenjualan'];?></td>
                       <td><?= $row['HargaJual'];?></td>
+                      <td><?= $row['NamaPengguna'];?></td>
                       <td><?= $row['TanggalPenjualan'];?></td>
+                      <td><?= $row['NamaBarang'];?></div></td>
                       <td>
                         <a href="<?= base_url; ?>/penjualan/edit/<?= $row['IdPenjualan'] ?>" class="badge badge-info ">Edit</a> 
                         <a href="<?= base_url; ?>/penjualan/hapus/<?= $row['IdPenjualan'] ?>" class="badge badge-danger" onclick="return confirm('Hapus data?');">Hapus</a>

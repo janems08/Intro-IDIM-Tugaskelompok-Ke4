@@ -27,7 +27,7 @@
                   </div>
                   <div class="form-group">
                     <label >Harga Beli</label>
-                    <input type="number" class="form-control" step="10000" min="0" max="100000000" placeholder="masukkan harga beli..." name="HargaBeli">
+                    <input type="number" class="form-control" step="10000" min="0" max="1000000000" placeholder="masukkan harga beli..." name="HargaBeli">
                   </div>
                   <div class="form-group">
                     <label>Pengguna</label>

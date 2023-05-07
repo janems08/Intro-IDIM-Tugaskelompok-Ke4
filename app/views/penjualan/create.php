@@ -23,17 +23,34 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label >Jumlah Penjualan</label>
-                    <input type="number" class="form-control" placeholder="masukkan jumlah penjualan" name="JumlahPenjualan">
+                    <input type="number" min="1" class="form-control" placeholder="masukkan jumlah penjualan" name="JumlahPenjualan">
                   </div>
                   <div class="form-group">
                     <label >Harga Jual</label>
-                    <input type="number" class="form-control" placeholder="masukkan harga jual" name="HargaJual">
+                    <input type="number" step="10000" min="0" max="1000000000" class="form-control" placeholder="masukkan harga jual" name="HargaJual">
+                  </div>
+                  <div class="form-group">
+                    <label>Pengguna</label>
+                    <select class="form-control" name="IdPengguna">
+                        <option value="">Pilih</option>
+                         <?php foreach ($data['pengguna'] as $row) :?>
+                        <option value="<?= $row['IdPengguna']; ?>"><?= $row['NamaPengguna']; ?></option>
+                      <?php endforeach; ?>
+                    </select>
                   </div>
                   <div class="form-group">
                     <label >Tanggal Penjualan</label>
                     <input type="text" class="form-control" placeholder="masukkan tanggal penjualan" name="TanggalPenjualan">
                   </div>
-                  
+                  <div class="form-group">
+                    <label>Nama Barang</label>
+                    <select class="form-control" name="IdBarang">
+                        <option value="">Pilih</option>
+                         <?php foreach ($data['barang'] as $row) :?>
+                        <option value="<?= $row['IdBarang']; ?>"><?= $row['NamaBarang']; ?></option>
+                      <?php endforeach; ?>
+                    </select>
+                  </div>
                 </div>
                 <!-- /.card-body -->
 
