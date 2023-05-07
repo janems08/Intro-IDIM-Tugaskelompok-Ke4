@@ -17,10 +17,10 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Hello</h3>
+          <h3 class="card-title">Selamat datang dihalaman Utama!</h3>
         </div>
         <div class="card-body">
-          Selamat datang dihalaman Utama!
+          Berikut Diagram rugi laba berdasarkan Daftar Barang
         </div>
         <div style="width: 800px;">
             <canvas id="keuntunganChart"></canvas>
