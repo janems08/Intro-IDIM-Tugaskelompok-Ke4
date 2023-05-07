@@ -118,7 +118,7 @@ REFERENCES pengguna(IdPengguna);
 --
 
 CREATE TABLE `pelanggan` (
-  `IdPelanggan` int(11) NOT NULL AUTO_INCREMENT,
+  `IdPelanggan` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `NamaPelanggan` varchar(100) NOT NULL,
   `email` varchar(20) NOT NULL,
   `TanggalLahir` date NOT NULL,

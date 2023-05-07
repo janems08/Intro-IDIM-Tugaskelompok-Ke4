@@ -1,7 +1,6 @@
 <?php
 
-define('base_url', 'http://localhost:8080/Intro-IDIM-Tugaskelompok-Ke4/public
-');
+define('base_url', 'http://localhost/projects/TK4/public');
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
