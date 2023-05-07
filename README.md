@@ -1,6 +1,6 @@
 ## Intro-IDIM-Tugaskelompok-Ke4
 
-## Installion 
+## Installation 
 ###### import DB introIDIM_TugasKelompok4.sql
 ###### clone project into your local htdocs -> localhost folder
 ###### set base_url in folder app/config/config.php -> make sure already same with your path folder project
